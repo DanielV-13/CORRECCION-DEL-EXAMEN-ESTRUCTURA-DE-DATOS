@@ -71,7 +71,6 @@ public class Main3 {
             circulo.offerLast(i);
 
         }
-
             // Definimos los saltos del ejemplo
             int avanza = 3;
             int retroc = 4;
@@ -80,6 +79,7 @@ public class Main3 {
             System.out.println(circulo);
 
             // Llamamos al métod0
+        System.out.println("Lista de eliminados");
             System.out.println(Josephus(circulo, avanza, retroc));
 
         }
