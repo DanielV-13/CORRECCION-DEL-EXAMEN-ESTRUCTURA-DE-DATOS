@@ -53,8 +53,7 @@ public class ListDE<E> {
         }
         return s;
     }
-
-    // --- NUEVO METODO DEL TEMA 1 ---
+    // --- RESOLUCION DEL TEMA 1---
     public ListDE<E> UnionEsp (E val1, E val2, int n, Comparator<E> c){
 
         //Generar la primera sublista
@@ -73,9 +72,7 @@ public class ListDE<E> {
                 }
             }
         }
-
-//Generar la segunda Sublista
-        //Generar la primera sublista
+        //Generar la segunda Sublista
         ListDE<E> lista2= new ListDE<>();
 
         //For para recorrer la instancia actual (this)
