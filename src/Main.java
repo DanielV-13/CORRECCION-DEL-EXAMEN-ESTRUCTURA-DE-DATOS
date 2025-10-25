@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 
 //--------EJEMPLO DE MAIN TEMA 1--------
 public class Main {
