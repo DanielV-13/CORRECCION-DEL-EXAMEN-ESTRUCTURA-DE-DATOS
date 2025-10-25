@@ -1,15 +1,25 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+//--------EJEMPLO DE MAIN TEMA 1--------
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        ListDE<Integer> lista= new ListDE<>();
+        lista.add(lista.getTail(),new NodeDE<Integer>(1));
+        lista.add(lista.getTail(),new NodeDE<Integer>(3));
+        lista.add(lista.getTail(),new NodeDE<Integer>(5));
+        lista.add(lista.getTail(),new NodeDE<Integer>(9));
+        lista.add(lista.getTail(),new NodeDE<Integer>(2));
+        lista.add(lista.getTail(),new NodeDE<Integer>(34));
+        lista.add(lista.getTail(),new NodeDE<Integer>(2));
+        lista.add(lista.getTail(),new NodeDE<Integer>(19));
+        lista.add(lista.getTail(),new NodeDE<Integer>(23));
+        lista.add(lista.getTail(),new NodeDE<Integer>(8));
+        lista.add(lista.getTail(),new NodeDE<Integer>(4));
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+
+        //Comparator que se va a usar
+        Comparador<Integer> c = new Comparador<>();
+
+        //------METODO QUE RESUELVE EL TEMA 1-----
+        System.out.println(lista.UnionEsp(5,23,3,c)) ;
+
     }
 }
