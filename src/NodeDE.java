@@ -1,39 +1,27 @@
-public class NodeDE <E>{
+// Clase NodeDE (Nodo Doblemente Enlazado) - TDA GENERICO
+
+public class NodeDE<E> {
+
     //Atributos
     private E data;
-    private NodeDE previous;
-    private NodeDE next;
+    private NodeDE<E> previous;
+    private NodeDE<E> next;
 
-    //Constructor
-    public NodeDE(E data){
-        this.data =data;
-        this.next= null;
-        this.previous=null;
+    // Constructor
+    public NodeDE(E data) {
+        this.data = data;
+        this.previous = null;
+        this.next = null;
     }
 
-    //Metodos
-    public E getData(){ return this.data;}
-    public void setData(E data){this.data = data;}
+    // Getters y Setters
+    public E getData() {return data; }
+    public void setData(E data) {this.data = data; }
 
-    //Para recuperar y setear nodo de despues (next)
-    public NodeDE getNext(){ return this.next;}
-    public void setNext(NodeDE next){this.next=next;}
+    public NodeDE<E> getNext() {return next; }
+    public void setNext(NodeDE<E> next) {this.next = next;}
 
-    public NodeDE getPrevious(){ return this.previous;}
-    public void setPrevious(NodeDE next){this.previous=previous;}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
+    public NodeDE<E> getPrevious() { return previous; }
+    public void setPrevious(NodeDE<E> previous) {this.previous = previous; }
 
 }
